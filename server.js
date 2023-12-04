@@ -1,8 +1,12 @@
-const express = require('express');
+const express = require("express");
 const app = express();
-const port = 3001;
+const path = require("path");
+const PORT = process.env.PORT || 3001;
+// const api = require("./routes/notes");
 
-app.use(express.static('public'))
-app.listen(port,() =>{
-    console.log('server is running')
+app.use(express.static("public"));
+app.listen(PORT, () => {
+  console.log("server is running");
 });
+
+app.get("/api/notes", (req, res) => {});
