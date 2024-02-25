@@ -1,7 +1,7 @@
 // GLOBAL VARIABLES & REQUIRES
 const express = require('express');
-const htmlRoutes = require('./routes/routes.js');
-const apiRoutes = require('./routes/notes.js');
+const htmlRoutes = require('./routes/htmlR.js');
+const apiRoutes = require('./routes/notesR.js');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
